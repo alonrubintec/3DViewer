@@ -24,7 +24,7 @@ Powered by Python the PyQt framework, the app use OpenGL, in combination
 </a>
 
 ### App preview:
-![Alt text](resource/app_preview.png "app_preview.png")
+![Alt text](https://github.com/alonrubintec/3DViewer/blob/master/resource/app_preview.PNG?raw=true "app_preview.png")
 
 ### How to install:
 
