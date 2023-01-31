@@ -10,9 +10,7 @@ Powered by Python the PyQt framework, the app use OpenGL, in combination
 <br>Designed and developed by Alon Rubin.
 
 
-
 ### Movement:
-
 - Rotate:  click and drag the <b>left mouse</b> button.
 - Pan: click and drag the <b>right mouse</b> button.
 - Zoom: use the <b>mouse wheel</b> to zoom in or out.
