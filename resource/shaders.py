@@ -1,4 +1,4 @@
-vertex_shader='''
+vertex_shader = '''
                 #version 330
                 
                 uniform mat4 Mvp;
@@ -18,7 +18,7 @@ vertex_shader='''
                     gl_Position = Mvp * vec4(in_position, 1.0);
                 }
             '''
-fragment_shader='''
+fragment_shader = '''
                 #version 330
                 
                 uniform sampler2D Texture;
