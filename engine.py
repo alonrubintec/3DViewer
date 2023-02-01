@@ -148,14 +148,15 @@ class QGLControllerWidget(QtOpenGL.QGLWidget):
         self.grid_alpha_value = (alpha*0.01)
 
     def background_color(self, color):
-        self.bg_color = color = color
+        self.bg_color = color
 
     def update_fov(self, num):
         self.fov = num
         self.camera_zoom = self.camera_distance(num)
         self.update()
 
-    def camera_distance(self, num):
+    @staticmethod
+    def camera_distance(num):
         return 1 / (math.tan(math.radians(num / 2)))
 
     def update_grid_cell(self, cells):

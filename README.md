@@ -1,12 +1,12 @@
 ## Qt 3DViewer
-### Qt 3DViewer is a compact tool for viewing 3D models in a user friendly way. 
+### Qt 3DViewer is a compact tool for viewing 3D models in a user-friendly way. 
 
 <br>This project is a compact and user-friendly application designed to showcase 
 <br>3D models in a visually appealing manner. With support for a wide range of 
 <br>file formats including .obj, .stl, .ply, .off, and .om.
 
 Powered by Python the PyQt framework, the app use OpenGL, in combination 
-<br>with ModernGL to render the 3D models and scenes in a interactive experience.
+<br>with ModernGL to render the 3D models and scenes in an interactive experience.
 <br>Designed and developed by Alon Rubin.
 
 
@@ -27,8 +27,8 @@ Powered by Python the PyQt framework, the app use OpenGL, in combination
 ### How to install:
 
 1. Install Python 3.9
-2. Install PyQt 5
-3. Import all the Libraries
+2. Install requirements
+3. run "main.py" file
 
 ## Like this project?
 

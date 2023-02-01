@@ -92,7 +92,8 @@ class ArcBallUtil(ArcBall):
         self.click(mouse_pt)
         return
 
-    def Matrix4fSetRotationFromMatrix3f(self, NewObj, m3x3):
+    @staticmethod
+    def Matrix4fSetRotationFromMatrix3f(NewObj, m3x3):
         scale = np.linalg.norm(NewObj[:3, :3], ord='fro') / np.sqrt(3)
         NewObj[0:3, 0:3] = m3x3 * scale
         scaled_NewObj = NewObj

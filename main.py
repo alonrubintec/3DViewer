@@ -41,13 +41,13 @@ class MainWindow(QtWidgets.QMainWindow):
 
         # Settings Sliders
         self.fov_slider.valueChanged.connect(lambda: f.change_slider(self.fov_slider, self.fov_slider_value, self.openGL, "fov"))
-        self.fov_slider_value.textChanged.connect(lambda: f.updateSlider(self.fov_slider, self.fov_slider_value))
+        self.fov_slider_value.textChanged.connect(lambda: f.update_slider(self.fov_slider, self.fov_slider_value))
         self.grid_slider.valueChanged.connect(lambda: f.change_slider(self.grid_slider, self.grid_slider_value, self.openGL, "na"))
-        self.grid_slider_value.textChanged.connect(lambda: f.updateSlider(self.grid_slider, self.grid_slider_value))
+        self.grid_slider_value.textChanged.connect(lambda: f.update_slider(self.grid_slider, self.grid_slider_value))
 
         # Settings Sliders
         self.wireframe_slider.valueChanged.connect(lambda: f.change_slider(self.wireframe_slider, self.wireframe_slider_value, self.openGL, "wireframe"))
-        self.wireframe_slider_value.textChanged.connect(lambda: f.updateSlider(self.wireframe_slider, self.wireframe_slider_value))
+        self.wireframe_slider_value.textChanged.connect(lambda: f.update_slider(self.wireframe_slider, self.wireframe_slider_value))
 
         # Settings radio buttons
         self.wireframe_radio.toggled.connect(lambda: self.openGL.make_wireframe())
@@ -57,7 +57,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.grid_cell.textChanged.connect(lambda: f.update_grid_size(self.grid_cell, self.openGL, "cell"))
         self.grid_size.textChanged.connect(lambda: f.update_grid_size(self.grid_size, self.openGL, "size"))
         self.grid_slider.valueChanged.connect(lambda: f.change_slider(self.grid_slider, self.grid_slider_value, self.openGL, "grid"))
-        self.grid_slider_value.textChanged.connect(lambda: f.updateSlider(self.grid_slider, self.grid_slider_value))
+        self.grid_slider_value.textChanged.connect(lambda: f.update_slider(self.grid_slider, self.grid_slider_value))
 
 
 if __name__ == '__main__':
