@@ -18,7 +18,7 @@ Powered by Python the PyQt framework, the app use OpenGL, in combination
 ### Watch a video demo:
 
 <a href="https://www.youtube.com/watch?v=ZwK2B9AODtw&ab_channel=ALONZUBINA" target="_blank">
-<img src="https://i.ytimg.com/an_webp/ZwK2B9AODtw/mqdefault_6s.webp?du=3000&sqp=CPzh5Z4G&rs=AOn4CLCFIgJwRNM3GbouU5iCmgl1I0AuDw" alt="Watch the series" width="340" height="180" border="10" />
+<img src="https://i.ytimg.com/an_webp/ZwK2B9AODtw/mqdefault_6s.webp?du=3000&sqp=CNTB6Z4G&rs=AOn4CLCHnn6Hr9zfh7cAxOX0AsEJMwo2Yg" alt="Watch the series" width="340" height="180" border="10" />
 </a>
 
 ### App preview:
