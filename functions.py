@@ -5,27 +5,31 @@ import openmesh
 import re
 
 
-def open_file(opengl_obj, obj_path, obj_name, uv_label, material_label, drawcalls_label, vertices_label, triangles_label, edges_label):
+def open_file_ask(opengl_obj, obj_path, obj_name, uv_label, material_label, drawcalls_label, vertices_label, triangles_label, edges_label):
     file_name = QtWidgets.QFileDialog.getOpenFileName(
         None, 'Open file', '', "Mesh files (*.obj *.stl *.ply *.off *.om)")
     if not file_name[0]:
         return
-    mesh = openmesh.read_trimesh(file_name[0])
+    open_file(file_name[0], opengl_obj, obj_path, obj_name, uv_label, material_label, drawcalls_label, vertices_label, triangles_label, edges_label)
+
+
+def open_file(file_name, opengl_obj, obj_path, obj_name, uv_label, material_label, drawcalls_label, vertices_label, triangles_label, edges_label):
+    mesh = openmesh.read_trimesh(file_name)
     opengl_obj.set_mesh(mesh)
     set_name(file_name, obj_path, obj_name)
     set_file_info(mesh, vertices_label, triangles_label, edges_label)
 
-    _, file_extension = os.path.splitext(file_name[0])
+    _, file_extension = os.path.splitext(file_name)
     file_format = file_extension.replace(".", "")
     if file_format == "obj":
-        has_uv(file_name[0], uv_label)
-        materials(file_name[0], material_label)
-        draw_calls(file_name[0], drawcalls_label)
+        has_uv(file_name, uv_label)
+        materials(file_name, material_label)
+        draw_calls(file_name, drawcalls_label)
 
 
 def set_name(file_name, obj_path, obj_name):
-    file_path = os.path.normpath(file_name[0])
-    ob_name = os.path.basename(file_name[0])
+    file_path = os.path.normpath(file_name)
+    ob_name = os.path.basename(file_name)
     obj_path.setText(file_path)
     obj_name.setText(ob_name)
 
